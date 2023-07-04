@@ -3,7 +3,7 @@
 ***     \author      PriyankaSelvaraj(dept)
 ***     \email       PriyankaSelvaraj1234@in.xxx.com
 ***     \brief       Declaration of datatypes and functions required for battery management                
-/*******************************************************************************************/
+********************************************************************************************/
 #pragma once
 
 typedef enum 

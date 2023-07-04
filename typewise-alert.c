@@ -17,7 +17,7 @@ BreachType inferBreach(double value, double lowerLimit, double upperLimit)
   {
     /* Do Nothing; tempClassification is already initialized to NORMAL */
   }
-  
+
   return tempClassification;
 }
 

@@ -1,6 +1,10 @@
+/********************************************************************************************
+***     \file        typewise-alert.h
+***     \author      PriyankaSelvaraj(dept)
+***     \email       PriyankaSelvaraj1234@in.xxx.com
+***     \brief       Declaration of datatypes and functions required for battery management                
+/*******************************************************************************************/
 #pragma once
-
-#define BATTERYTEMP_LOWER_LIMIT  0
 
 typedef enum 
 {

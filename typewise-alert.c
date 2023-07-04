@@ -78,5 +78,7 @@ void sendToEmail(BreachType breachType)
     case TOO_HIGH:
       printf("high\n");
       break;
+    default:
+      break;
   }
 }

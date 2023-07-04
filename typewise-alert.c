@@ -48,14 +48,13 @@ void checkAndAlert(AlertTarget alertTarget, BatteryCharacter batteryChar, double
 
   if((NORMAL != breachType))
   {
-    switch(alertTarget) 
+    if(TO_CONTROLLER == alertTarget) 
     {
-      case TO_CONTROLLER:
-        sendToController(breachType);
-        break;
-      case TO_EMAIL:
-        sendToEmail(breachType);
-        break;
+      sendToController(breachType);
+    }
+    else /*If controller not present; send the alert to email*/
+    {
+      sendToEmail(breachType);
     }
   }
 }

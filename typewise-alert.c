@@ -79,6 +79,7 @@ void sendToEmail(BreachType breachType)
       printf("high\n");
       break;
     default:
+      printf("normal\n");
       break;
   }
 }

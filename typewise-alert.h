@@ -1,5 +1,7 @@
 #pragma once
 
+#define BATTERYTEMP_LOWER_LIMIT  0
+
 typedef enum 
 {
   PASSIVE_COOLING,
@@ -26,7 +28,7 @@ typedef struct
   char brand[48];
 } BatteryCharacter;
 
-BreachType inferBreach(double value, double lowerLimit, double upperLimit);
+BreachType inferBreach(double value, double upperLimit);
 BreachType classifyTemperatureBreach(CoolingType coolingType, double temperatureInC);
 void checkAndAlert(AlertTarget alertTarget, BatteryCharacter batteryChar, double temperatureInC);
 void sendToController(BreachType breachType);
